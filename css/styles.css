@@ -11,6 +11,7 @@
   --black: #000000;
   --background-white: #f5f4fa;
   --text-color-white: #ffffff;
+  --background-white-two: #ffffff;
   --background-hero: #c4c4c4;
   --footer-addres: rgba(255, 255, 255, 0.6);
   --border-color-card: #eeeeee;
@@ -124,11 +125,26 @@ img {
   margin-left: auto;
   display: flex;
 }
+.contacts .icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+/* .contacts .icon-contacts:hover,
+.contacts .icon-contacts:focus {
+  color: var(--accent-color);
+} */
+.contacts .icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .contacts .item + .item {
   margin-left: 50px;
 }
+
 .header-contacts {
-  display: block;
+  display: flex;
+  align-items: center;
+  /* display: block; */
   padding: 32px 0;
 
   color: var(--title-text-color);
@@ -212,20 +228,14 @@ img {
 .feateure-list {
   display: flex;
 }
-.feateure-list-item {
-  width: 270px;
-  height: 248px;
+.feateure-icon {
+  padding: 25px 100px;
+  background: var(--background-white);
+  border-radius: 4px;
+  margin: 0 30px 30px 0;
 }
-.feateure-list-item::before {
-  display: block;
-
-  height: 120px;
-  outline: 1px solid red;
-  background-image: url(../images/SVG/antenna\ 1.svg);
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center;
-  background-color: ;
+.feateure-ico :last-child {
+  margin-right: 0;
 }
 .section-title {
   text-align: center;
@@ -244,6 +254,7 @@ img {
 }
 /* Work */
 .work {
+  padding-bottom: 0;
 }
 .work-list {
   display: flex;
@@ -262,21 +273,51 @@ img {
 .team-list-item {
   text-align: center;
   margin-right: 30px;
-  background: var(--text-color-white);
+  background: var(--background-white-two);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
 }
-.team-title {
-}
-
-.text {
+.team-list .text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+.team-list .social-icon {
+  display: flex;
+  justify-content: center;
+}
 
-.team-title {
+.team-list .social-item {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+  background-color: var(--background-white-two);
+  margin-right: 10px;
+}
+
+.team-list .social-item:last-child {
+  margin-right: 0;
+}
+
+.team-list .social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.team-list .social-link:hover,
+.team-list .social-link:focus {
+  background-color: var(--accent-color);
+}
+.social-item .icon {
+  fill: var(--title-text-color);
+}
+.team-list .team-title {
   margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
@@ -285,13 +326,38 @@ img {
 }
 
 .team-text {
-  margin: 10px 0 30px;
+  margin: 10px 0 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
+/* Постійні клієнти */
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-item {
+  margin-right: 30px;
+  background-color: var(--background-white);
+  cursor: pointer;
+  border: 1px solid #afb1b8;
+}
+.client-link .client-icon {
+  padding: 16px 32px;
+  fill: var(--title-text-color);
+}
+.client-list .client-item:last-child {
+  margin-right: 0;
+}
+.client-item .client-icon:hover,
+.client-item .client-icon:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 /* Портфоліо */
 
 /* Фільтр */
@@ -336,7 +402,7 @@ img {
 }
 
 .card-set > .item {
-  background: var(--text-color-white);
+  background: var(--background-white-two);
   border: 1px solid var(--border-color-card);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
@@ -372,7 +438,7 @@ img {
 
 /* Footer */
 .footer {
-  background: var(--background-hero);
+  background-color: var(--black);
   padding: 60px 0;
 }
 /* Footer logo */
@@ -400,4 +466,7 @@ img {
 .footer-address:hover,
 .footer-address:focus {
   color: var(--text-color-white);
+}
+.footer-social {
+  display: flex;
 }
