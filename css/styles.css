@@ -339,6 +339,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .client-item {
   margin-right: 30px;
   background-color: var(--background-white);
