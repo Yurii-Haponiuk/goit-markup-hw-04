@@ -253,6 +253,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.feateure-list-item .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
 /* Work */
 .work {
   padding-bottom: 0;
@@ -266,12 +273,15 @@ img {
 
 /* Team */
 .team {
+  box-sizing: content-box;
   background: var(--background-white);
 }
 .team-list {
   display: flex;
 }
 .team-list-item {
+  box-sizing: content-box;
+  max-width: 270px;
   text-align: center;
   margin-right: 30px;
   background: var(--background-white-two);
@@ -314,6 +324,9 @@ img {
 .team-list .social-link:hover,
 .team-list .social-link:focus {
   background-color: var(--accent-color);
+}
+.team-list .social-link:hover svg {
+  fill: #fff;
 }
 .social-item .icon {
   fill: var(--title-text-color);
@@ -497,7 +510,7 @@ img {
   display: flex;
 
   justify-content: center;
-  fill: Solid#2F303A;
+  fill: #2f303a;
 }
 .footer-social-link .icon {
   fill: var(--text-color-white);
@@ -509,7 +522,7 @@ img {
 
   margin-right: 10px;
 }
-.footer-social-item: :last-child {
+.footer-social-item:last-child {
   margin-right: 0;
 }
 .footer-social-link {
