@@ -439,6 +439,7 @@ img {
 
 /* Footer */
 .footer {
+  display: flex;
   background-color: var(--black);
   padding: 60px 0;
 }
@@ -452,7 +453,7 @@ img {
 }
 
 .footer-address {
-  display: block;
+  /* display: block; */
   padding-bottom: 9px;
   font-style: normal;
   font-size: 14px;
@@ -469,5 +470,15 @@ img {
   color: var(--text-color-white);
 }
 .footer-social {
-  display: flex;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+.footer-social-title {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--text-color-white);
+}
+.footer-social-link .icon {
+  fill: var(--text-color-white);
 }
