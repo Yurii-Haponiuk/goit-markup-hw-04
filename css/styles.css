@@ -455,17 +455,11 @@ img {
 
 /* Footer */
 .footer {
-  display: flex;
-
   padding: 60px 0;
-
-  /* box-sizing: border-box; */
-
-  /* position: absolute; */
-  width: 1600px;
-
   background: #2f303a;
-  border: 1px solid #000000;
+}
+.footer-block {
+  display: flex;
 }
 /* Footer logo */
 .footer-logo {
