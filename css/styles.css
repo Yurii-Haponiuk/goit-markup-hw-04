@@ -23,7 +23,6 @@
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  max-width: 1600px;
 }
 .container {
   max-width: 1200px;
@@ -272,6 +271,7 @@ img {
 }
 
 /* Team */
+
 .team {
   box-sizing: content-box;
   background: var(--background-white);
@@ -280,13 +280,15 @@ img {
   display: flex;
 }
 .team-list-item {
-  box-sizing: content-box;
   max-width: 270px;
   text-align: center;
   margin-right: 30px;
   background: var(--background-white-two);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-list .text {
   font-size: 14px;
