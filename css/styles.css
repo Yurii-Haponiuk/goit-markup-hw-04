@@ -28,6 +28,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  width: 100%;
 }
 
 .link {
@@ -163,16 +164,21 @@ img {
 .hero {
   padding: 200px 0;
   text-align: center;
-}
-.overlay {
   max-width: 1600px;
-  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-color: var(--background-hero);
+}
+/* .overlay {
+  max-width: 1600px;
+
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
   background-color: var(--background-hero);
-}
+} */
 
 .hero-title {
   max-width: 696px;
@@ -261,7 +267,7 @@ img {
 }
 /* Work */
 .work {
-  padding-bottom: 0;
+  padding-bottom: 94;
 }
 .work-list {
   display: flex;
@@ -282,7 +288,7 @@ img {
 .team-list-item {
   max-width: 270px;
   text-align: center;
-  margin-right: 30px;
+
   background: var(--background-white-two);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
